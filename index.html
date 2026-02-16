@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>67</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d00ff; /* Rojo 67 */
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --accent: #000000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* Header tipo Webifica */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
+        .logo span { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.indiatimes.com/thumb/123963169.cms?imgsize=46526&width=616&resizemode=4'); /* Imagen tech de fondo */
+            background-size: cover;
+            padding: 0 20px;
+        }
+
+     
+        /* Botón estilo "Call to Action" */
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 10px 20px rgb(0, 30, 255);
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+
+        footer {
+            padding: 50px;
+            text-align: center;
+            border-top: 1px solid #222;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        /* Animación para el 67 */
+        .glitch-text {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; transform: scale(1.05); }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">bodrio<span>67</span></div>
+        <nav style="display: flex; gap: 20px; font-size: 0.9rem; font-weight: bold;">
+            <div>MOMAZOS</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="glitch-text">Soy un fracasado  <span style="color:var(--primary)">👀</span></h1>
+        <p>EL 67 LO ES TODO</p>
+       <a href=" https://mrbeastcom0hola-afk.github.io/" target="_blank" class="cta-button pulse-effect">JUGAR AHORA</a>
+    </section>
+</body>
+</html>
